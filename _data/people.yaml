@@ -2,30 +2,34 @@
 # Authors List
 # ------------------------------------------------------------------------------
 # This YAML data file contains entry for each author involved in the work
-# This YAML data file contains information for each author of the work. The 
-# author list will be generated in the order in which they are listed below. 
+# This YAML data file contains information for each author of the work. The
+# author list will be generated in the order in which they are listed below.
 # You can  add additional fields to each person, but these will not show up
-# automatically and must then be included manually in the Liquid template code 
+# automatically and must then be included manually in the Liquid template code
 # of the `page01_people.md` file.
 # ##############################################################################
 - author:
-  name: Dr. Osophila
-  link: "https://en.wikipedia.org/wiki/Drosophila"
-  title: Postdoctoral Scholar
-  img: dr_osophila.jpg
-  institute: Bicoid Institute of Development
+  name: Megan Wang
+  link: "https://github.com/meganwang08"
+  title: Undergraduate Student
+  img: Megan_image.jpg
+  institute: Department of Biology and Biological Engineering California Institute of Technology
   other_info:
-     Email Address: "flyguy@university.edu"
+     Email Address: "yinghan@caltech.edu"
 - author:
-  name: Dr. Melanie O'Gaster
-  link: "https://en.wikipedia.org/wiki/Drosophila_melanogaster"
-  title: Postdoctoral Scholar
-  img: melanogaster.jpg
-  institute: French Flag Research Institute
+  name: Elaine Lin
+  link: "https://github.com/elainelin914"
+  title: Undergraduate Student
+  img: Elaine.jpg
+  institute: Department of Biology and Biological Engineering California Institute of Technology
   other_info:
-    Current Location: Apple Juice Plates, Inc
+     Email Address: "elin2@caltech.edu"
 
 - author:
-  name: Sally Monella
-  title: Research Technician
-  institute: French Flag Research Institute
+  name: Mohammad Soufi
+  link: "https://github.com/msoufi1453"
+  title: Undergraduate Student
+  img: Mo.jpg
+  institute: Department of Biology and Biological Engineering California Institute of Technology
+  other_info:
+     Email Address: "msoufi@caltech.edu"

@@ -1,11 +1,20 @@
 - script:
-  name: script1.py
+  name: EDA_fluorescent_labeling.py
   desc: >
-    Super fancy script which calcualate some complicated stuff with
-    well-documented code.
+    Exploratory data analysis first visualizing the labeled vs unlabled microtubule subunits in catastrope.
 - script:
-  name: script2.py
+  name: poisson_modeling_microtubule.py
   desc: >
-    Yet another script that does something-or-other.
-
-
+    Models microtubule catastrope as a poisson process.
+- script:
+  name: confint_microtubule.py
+  desc: >
+    Graphs confience intervals for the EDA of fluorescent labeling.
+- script:
+  name: MLE_of_microtubules.py
+  desc: >
+    MLE of microtubule catastrophe data modeled with both gamma and poisson distributions.
+- script:
+  name: model_comparison_microtubule.py
+  desc: >
+    Comparing gamma and poisson distributions from MLE_of_microtubuless.
