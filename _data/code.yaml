@@ -17,4 +17,4 @@
 - script:
   name: model_comparison_microtubule.py
   desc: >
-    Comparing gamma and poisson distributions from MLE_of_microtubuless.
+    Comparing gamma and poisson distributions from MLE_of_microtubules.

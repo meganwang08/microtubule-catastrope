@@ -102,11 +102,11 @@ print('12 uM beta_1= [{}, {}]'.format(poisson_conf_int[0][0], poisson_conf_int[1
 print('12 uM beta_2= [{}, {}]'.format(poisson_conf_int[0][2], poisson_conf_int[1][2]))
 
 derived_samples = np.array(
-    [rg.exponential(1/beta_1, size=len(list_12uM)) + rg.exponential(1/beta_2, size=len(list_12uM)) for _ in range(10000)]
+    [rg.exponential(1/beta_1, size=len(list_12uM)) + rg.exponential(1/beta_2, size=len(list_12uM)) for _ in range(100000)]
 )
 
 gamma_samples = np.array(
-    [rg.gamma(alpha, scale=1/beta, size=len(list_12uM)) for _ in range(10000)]
+    [rg.gamma(alpha, scale=1/beta, size=len(list_12uM)) for _ in range(100000)]
 )
 
 #graphs
@@ -207,5 +207,5 @@ p2 = bebi103.viz.confints(
     title="95% Conf. Ints of MLE of Beta of Microtubule Catastrophe Modeled by Gamma Dist."
     )
 
-grid = gridplot([[derived,gamma],[der_diff,gamma_diff], [p1,p2]])
+grid = gridplot([stripbox, ecdf],[derived,gamma],[der_diff,gamma_diff], [p1,p2]])
 show(grid)
