@@ -8,7 +8,7 @@ interactive: interactive_1.html
 ---
 
 ## Figure Description
-Below is an example of an embedded interactive figure. It generates a stripbox plot
+Below is an example of our interactive figure. It generates a stripbox plot
 on the left used to visualize the data across different concentrations of tubulin.
 On the right, we should that for all concentrations of tubulin, our proposed model
 does not fit well to the measured data.

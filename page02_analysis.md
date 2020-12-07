@@ -16,6 +16,11 @@ sidebar: true
 {% include_relative fig_html/EDA_fluorescent_labeling.html %}
 </center>
 {% endif %}
+{% if entry[0] contains '2' %}
+<center>
+{% include_relative fig_html/poisson_microtubule.html %}
+</center>
+{% endif %}
 {% if entry[0] contains '3' %}
 ![image](fig_html/math.jpg)
 {% endif %}

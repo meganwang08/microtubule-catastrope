@@ -208,5 +208,5 @@ p2 = bebi103.viz.confints(
     title="95% Conf. Ints of MLE of Beta of Microtubule Catastrophe Modeled by Gamma Dist."
     )
 
-grid = gridplot([stripbox, ecdf],[derived,gamma],[der_diff,gamma_diff], [p1,p2]])
+grid = gridplot([[stripbox, ecdf],[derived,gamma],[der_diff,gamma_diff], [p1,p2]])
 show(grid)

@@ -17,7 +17,7 @@ Fluorescent Labeling Does Not Affect Time to Catastrophe: >
   is a reasonable and commonplace measure used to determine how different the two
   distributions are. For this test statistic, "at least as extreme as" means that
   the K-S statistic is greater than what was observed. We computed the p-value of this
-  test to be p = 0.26204 >  alpha = 0.05. This indicates it is possible to observe this test statistic under
+  test to be p = 0.26204 >  $\alpha$ = 0.05. This indicates it is possible to observe this test statistic under
   the null hypothesis that there is no difference in labeled and unlabeled catastrophe
   times and because we saw from our graphical analysis that the two distributions look
   very similar, we conclude that the measured data for labeled and unlabeled tubulin are very
@@ -40,10 +40,10 @@ Proposing a Novel Distribution to Model Time to Catastrophe: >
   to conclude that time to catastrophe follows a Gamma distribution. We propose
   an alternative model where we postulate that two biochemical processes will
   occur in sequence, triggering catastrophe. These processes are both Poisson
-  processes with rates beta_1 and beta_2, respectively. We use a random number
+  processes with rates $\beta_1$ and $\beta_2$, respectively. We use a random number
   generator to simulate 150 catastrophe events according to this model with various pairs
-  of beta_1 and beta_2. We include the source code to generate these plots below (___).
-  We note that the more beta_2 is greater than beta_1, the steeper the ECDF is. This makes
+  of $\beta_1$ and $\beta_2$. We include the source code to generate the [left plots below](https://meganwang08.github.io//microtubule-catastrophe/software/poisson_modeling_microtubule.py).
+  We note that the more $\beta_2$ is greater than $\beta_1$, the steeper the ECDF is. This makes
   sense because if the processes occurred faster, catastrophe would be triggered more quickly.
 
 fig2: >
@@ -53,8 +53,8 @@ Analytical derivation of time to catastrophe model: >
   We analytically derive the distribution for the time to catastrophe, finding the
   PDF and CDF for this distribution. We then compare this analytical CDF with ECDFs
   from our previous simulation to confirm that they match and we see that the CDF is
-  correct. We include the source code to generate these plots below (___). We can then
-  use this analytical PDF or CDF to compare this model to a Gamma distribution to see
+  correct. We include the source code to generate the [right plot above](https://meganwang08.github.io//microtubule-catastrophe/software/poisson_modeling_microtubule.py).
+  We can then use this analytical PDF or CDF to compare this model to a Gamma distribution to see
   which is more appropriate to model time to catastrophe.
 
 Derivation Work: >
@@ -78,7 +78,7 @@ Comparing Our Proposed Distribution With a Gamma Distribution: >
   quantity related to the distance between the true generative distribution and the model
   distribution. Given two models, the one with the smaller AIC value is likely closer to the
   true generative distribution. We then compute the AIC for both and indeed find that our
-  proposed model consisting of 2 Poisson processes (AIC value on the order of 10^-11) is
+  proposed model consisting of 2 Poisson processes (AIC value on the order of $10^{-11}$) is
   not as likely to be as close to the measured data as the Gamma Distribution.
 
 Summary: >
