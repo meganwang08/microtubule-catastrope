@@ -55,7 +55,7 @@ Analytical derivation of time to catastrophe model: >
   from our previous simulation to confirm that they match and we see that the CDF is
   correct. We include the source code to generate the [right plot above](https://meganwang08.github.io//microtubule-catastrophe/software/poisson_modeling_microtubule.py).
   We can then use this analytical PDF or CDF to compare this model to a Gamma distribution to see
-  which is more appropriate to model time to catastrophe.
+  which is more appropriate to model time to catastrophe. hello?
 
 Derivation Work: >
 
