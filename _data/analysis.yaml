@@ -1,7 +1,7 @@
 # ##############################################################################
 # analysis
 # ##############################################################################
-Confirming we can move forward with the provided data: >
+Fluorescent Labeling Does Not Affect Time to Catastrophe: >
   We compared the labeled vs unlabeled tubulin to confirm fluorescent labeling
   indeed doesn’t affect time to catastrophe by plotting the ECDFs (with confidence
   intervals) of the provided data of times to catastrophe. We display the ECDFs
@@ -13,17 +13,21 @@ Confirming we can move forward with the provided data: >
   and unlabeled tubulin result in similar mean time to catastrophe. We also conducted
   a permutation test to test our hypothesis that fluorescent labeling does not affect
   microtubule catastrophe dynamics. The test statistic we chose was the Kolmogorov-Smirnov
-  (K-S) statistic; we computed the p-value of this test to see whether it was possible
-  that the distribution of catastrophe times for microtubules with labeled tubulin is
-  the same as that for unlabeled tubulin. We obtained a p-value of  p = 0.26204 >
-  alpha = 0.05. This indicates it is possible to observe this test statistic under
+  (K-S) statistic which is the maximal distance between the ECDFs of two samples. This
+  is a reasonable and commonplace measure used to determine how different the two
+  distributions are. For this test statistic, "at least as extreme as" means that
+  the K-S statistic is greater than what was observed. We computed the p-value of this
+  test to be p = 0.26204 >  alpha = 0.05. This indicates it is possible to observe this test statistic under
   the null hypothesis that there is no difference in labeled and unlabeled catastrophe
   times and because we saw from our graphical analysis that the two distributions look
   very similar, we conclude that the measured data for labeled and unlabeled tubulin are very
   similarly distributed and can be viewed as identical for analytical purposes. Moving
   forward, we only analyze the time to catastrophe of microtubules growing with fluorescently
-  labelled tubulin. We include the source code to generate this plot below as well as the
-  mentioned analysis (___).
+  labelled tubulin. We include the source code to generate this [the plot](https://meganwang08.github.io//microtubule-catastrophe/software/EDA_fluorescent_labeling.py)
+  as well as the [mentioned analysis](https://meganwang08.github.io//microtubule-catastrophe/software/MLE_of_microtubules.py %}).
+
+fig1: >
+
 
 Proposing a Novel Distribution to Model Time to Catastrophe: >
   Although previous work by multiple authors including Gardner et al. have asserted
@@ -42,6 +46,9 @@ Proposing a Novel Distribution to Model Time to Catastrophe: >
   We note that the more beta_2 is greater than beta_1, the steeper the ECDF is. This makes
   sense because if the processes occurred faster, catastrophe would be triggered more quickly.
 
+fig2: >
+
+
 Analytical derivation of time to catastrophe model: >
   We analytically derive the distribution for the time to catastrophe, finding the
   PDF and CDF for this distribution. We then compare this analytical CDF with ECDFs
@@ -49,6 +56,12 @@ Analytical derivation of time to catastrophe model: >
   correct. We include the source code to generate these plots below (___). We can then
   use this analytical PDF or CDF to compare this model to a Gamma distribution to see
   which is more appropriate to model time to catastrophe.
+
+Derivation Work: >
+
+
+fig3: >
+
 
 Comparing Our Proposed Distribution With a Gamma Distribution: >
   Next, we will analytically compare the distribution we propose consisting of two
@@ -61,4 +74,17 @@ Comparing Our Proposed Distribution With a Gamma Distribution: >
   ECDF and the measured ECDF to more clearly see how far apart the ECDF values of the
   predictive ECDFs are from the actual data points. We find that the difference between
   our proposed distribution and the measured data is indeed greater than that of the Gamma
-  distribution.
+  distribution. Then, we use the AIC, which can be broadly understood as an estimate of a
+  quantity related to the distance between the true generative distribution and the model
+  distribution. Given two models, the one with the smaller AIC value is likely closer to the
+  true generative distribution. We then compute the AIC for both and indeed find that our
+  proposed model consisting of 2 Poisson processes (AIC value on the order of 10^-11) is
+  not as likely to be as close to the measured data as the Gamma Distribution.
+
+Summary: >
+  From the data provided to us by the Howard Lab, we were able to compare a novel
+  model of microtubule catastrophe to the Gamma Distribution. Our novel model is
+  defined as 2 sequential biochemical processes which are Poisson and trigger
+  microtubule catastrophe. Through graphical and statistical analysis, we conclude
+  that our proposed model is not as appropriate to model time to catastrophe of
+  microtubules compared to the Gamma Distribution.

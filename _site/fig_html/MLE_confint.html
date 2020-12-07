@@ -1,173 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109526846-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', );
-</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      processEscapes: true
-    }
-  });
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-	<meta charset="utf-8">
-	<title>Analysis - Microtubule Catastrophe</title>
-
-  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
-
-    <meta content="Microtubule Catastrophe" property="og:site_name">
-  
-    <meta content="Analysis" property="og:title">
-  
-  
-    <meta content="article" property="og:type">
-  
-  
-    <meta content="Analysis of the plots" property="og:description">
-  
-  
-    <meta content="http://localhost:4000/analysis.html" property="og:url">
-  
-  
-  
-    <meta content="http://localhost:4000/microtubule-catastrophe/assets/img/microtubule_analysis.jpg" property="og:image">
-  
-  
-  
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@">
-    <meta name="twitter:creator" content="@">
-  
-    <meta name="twitter:title" content="Analysis">
-  
-  
-    <meta name="twitter:url" content="http://localhost:4000/analysis.html">
-  
-  
-    <meta name="twitter:description" content="Analysis of the plots">
-  
-  
-    <meta name="twitter:image:src" content="http://localhost:4000/microtubule-catastrophe/assets/img/microtubule_analysis.jpg">
-  
-
-	<meta name="description" content="Analysis of the plots">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta property="og:image" content="">
-	<link rel="shortcut icon" href="/microtubule-catastrophe/assets/img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/microtubule-catastrophe/assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/microtubule-catastrophe/assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/microtubule-catastrophe/assets/img/favicon/apple-touch-icon-144x144.png">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#263959">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#263959">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="/microtubule-catastrophe/assets/fonts/font-awesome/css/font-awesome.min.css">
-	<!-- Styles -->
-	<link rel="stylesheet" href="/microtubule-catastrophe/assets/css/main.css">
-</head>
-
-<body>
-
-  <div class="wrapper">
-    <aside class="sidebar">
-  <header>
-    <div class="about">
-      <div class="cover-author-image">
-        <a href="/microtubule-catastrophe/"><img src="/microtubule-catastrophe/assets/img/microtubule.gif" alt=""></a>
-      </div>
-      <div class="author-name"></div>
-      <div class="sidebar-links">
-      <hr>
-      
-       <p><a href="http://localhost:4000/microtubule-catastrophe/index.html">About</a></p>
-      <hr>
-      
-      
-       <p><a href="http://localhost:4000/microtubule-catastrophe/people">People</a></p>
-      <hr>
-      
-      
-       <p><a href="http://localhost:4000/microtubule-catastrophe/analysis.html">Analysis</a></p>
-      <hr>
-      
-      
-       <p><a href="http://localhost:4000/microtubule-catastrophe/code">Code and Data</a></p>
-      <hr>
-      
-      
-       <p><a href="http://localhost:4000/microtubule-catastrophe/interactive_a">Interactive Figure 1</a></p>
-      <hr>
-      
-      
-      
-      
-      
-      
-      </div>
-    </div>
-  </header> <!-- End Header -->
-
-  <footer>
-    <section class="contact">
-      <h3 class="contact-title">Contact</h3>
-      <ul>
-        
-        
-          <li class="github"><a href="http://github.com/meganwang08" target="_blank"><i class="fa fa-github"></i></a></li>
-        
-        
-          <li class="email"><a href="mailto:yinghan@caltech.edu"><i class="fa fa-envelope-o"></i></a></li>
-        
-      </ul> 
-    </section> 
-    <div class="copyright">
-      <p>2020 &copy; 
-    </div>
-    <center>
-    </center>
-  </footer> 
-</aside> 
-<div class="content-box clearfix">
-  <article class="article-page">
-  <div class="page-content">
-    
-    <div class="page-cover-image">
-      <figure>
-        <img class="page-image" src=/microtubule-catastrophe/assets/img/microtubule_analysis.jpg alt="Analysis">
-        
-          <figcaption style="background-color: rgb(0, 0, 0, 0.5);
-          font-weight:bold; text-align: center;">Wikipedia</figcaption>
-        
-      </figure>
-    </div> <!-- End Page Cover Image -->
-    
-    <div class="wrap-content">
-      <header class="header-page">
-        <h1 class="page-title">Analysis</h1>
-      </header>
-      
-<h2 id="fluorescent-labeling-does-not-affect-time-to-catastrophe">Fluorescent Labeling Does Not Affect Time to Catastrophe</h2>
-<p>We compared the labeled vs unlabeled tubulin to confirm fluorescent labeling indeed doesn’t affect time to catastrophe by plotting the ECDFs (with confidence intervals) of the provided data of times to catastrophe. We display the ECDFs here and the fluorescent labeling does not appear to make a difference on the onset of catastrophe as the ECDF plots do not deviate significantly from each other. Then, we computed 95% confidence intervals for the plug-in estimate of the mean time to catastrophe for labeled and unlabeled tubulin and found there is very strong overlap of the confidence intervals. This indicates that the labeled and unlabeled tubulin result in similar mean time to catastrophe. We also conducted a permutation test to test our hypothesis that fluorescent labeling does not affect microtubule catastrophe dynamics. The test statistic we chose was the Kolmogorov-Smirnov (K-S) statistic which is the maximal distance between the ECDFs of two samples. This is a reasonable and commonplace measure used to determine how different the two distributions are. For this test statistic, “at least as extreme as” means that the K-S statistic is greater than what was observed. We computed the p-value of this test to be p = 0.26204 &gt;  alpha = 0.05. This indicates it is possible to observe this test statistic under the null hypothesis that there is no difference in labeled and unlabeled catastrophe times and because we saw from our graphical analysis that the two distributions look very similar, we conclude that the measured data for labeled and unlabeled tubulin are very similarly distributed and can be viewed as identical for analytical purposes. Moving forward, we only analyze the time to catastrophe of microtubules growing with fluorescently labelled tubulin. We include the source code to generate this <a href="https://meganwang08.github.io//microtubule-catastrophe/software/EDA_fluorescent_labeling.py">the plot</a> as well as the <a href="https://meganwang08.github.io//microtubule-catastrophe/software/MLE_of_microtubules.py %}">mentioned analysis</a>.</p>
-
-<center>
-
 
 
 
@@ -175,7 +5,7 @@
 
   <head>
 
-      <meta charset="utf-8" />
+      <meta charset="utf-8">
       <title>Bokeh Plot</title>
 
 
@@ -671,14 +501,14 @@
 
 
 
-              <div class="bk-root" id="24cc3b0c-25f7-4fe3-b167-ea314a9abf9a" data-root-id="1001"></div>
+              <div class="bk-root" id="16b77bf8-77e4-4d4a-8a93-c3e4931bd3c8" data-root-id="1071"></div>
 
 
 
 
 
-        <script type="application/json" id="1175">
-          {"f741a7a5-5896-4bcd-a14e-64998372c98a":{"roots":{"references":[{"attributes":{"items":[{"id":"1047"},{"id":"1064"}],"location":"bottom_right"},"id":"1046","type":"Legend"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1034","type":"Circle"},{"attributes":{},"id":"1040","type":"BasicTickFormatter"},{"attributes":{"fill_color":{"value":"red"},"line_color":{"value":"red"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1049","type":"Circle"},{"attributes":{"label":{"value":"unlabeled"},"renderers":[{"id":"1051"}]},"id":"1064","type":"LegendItem"},{"attributes":{"data_source":{"id":"1032"},"glyph":{"id":"1033"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1034"},"selection_glyph":null,"view":{"id":"1036"}},"id":"1035","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"red"},"line_alpha":{"value":0.1},"line_color":{"value":"red"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1050","type":"Circle"},{"attributes":{"data":{"x":{"__ndarray__":"AAAAAAAAREAAAAAAAABOQAAAAAAAwFJAAAAAAAAAVEAAAAAAAEBVQAAAAAAAQFVAAAAAAABAX0AAAAAAAEBfQAAAAAAAQGBAAAAAAABAYEAAAAAAAOBgQAAAAAAAgGFAAAAAAAAgYkAAAAAAACBiQAAAAAAAIGJAAAAAAADAYkAAAAAAAGBjQAAAAAAAYGNAAAAAAAAAZEAAAAAAAABkQAAAAAAAoGRAAAAAAABAZUAAAAAAAIBmQAAAAAAAgGZAAAAAAACAZkAAAAAAAIBmQAAAAAAAwGdAAAAAAABgaEAAAAAAAEBqQAAAAAAA4GpAAAAAAABgbUAAAAAAAGBtQAAAAAAAYG1AAAAAAACgbkAAAAAAAEBvQAAAAAAAkHBAAAAAAACQcEAAAAAAAIBxQAAAAAAAcHJAAAAAAAAQc0AAAAAAABBzQAAAAAAAAHRAAAAAAACgdEAAAAAAAPB0QAAAAAAA4HVAAAAAAAAwdkAAAAAAADB2QAAAAAAAgHZAAAAAAAAgd0AAAAAAACB3QAAAAAAAwHdAAAAAAABgeEAAAAAAALB4QAAAAAAAAHlAAAAAAABQeUAAAAAAAFB5QAAAAAAAoHlAAAAAAADweUAAAAAAAEB6QAAAAAAAQHpAAAAAAACQekAAAAAAANB7QAAAAAAA0HtAAAAAAADAfEAAAAAAAMB8QAAAAAAAwHxAAAAAAACgfkAAAAAAAPB+QAAAAAAAQH9AAAAAAACQf0AAAAAAAOB/QAAAAAAAaIBAAAAAAABogEAAAAAAAOCAQAAAAAAA4IBAAAAAAAD4gUAAAAAAAMCCQAAAAAAAOINAAAAAAAAAhEAAAAAAAKCEQAAAAAAA8IRAAAAAAAC4hUAAAAAAAOCFQAAAAAAA+IZAAAAAAABIh0AAAAAAAHCHQAAAAAAA6IdAAAAAAAAQiEAAAAAAADCLQAAAAAAAsI1AAAAAAABYkUAAAAAAAOSRQAAAAAAAnJNAAAAAAAAIlkAAAAAAAFycQA==","dtype":"float64","order":"little","shape":[95]},"y":{"__ndarray__":"AAAAAAAAAADtWIEw0o6FP+1YgTDSjpU/sgJhpB0roD/tWIEw0o6lPyivobyG8qo/sgJhpB0rsD/PLXHq99yyP+1YgTDSjrU/C4SRdqxAuD8or6G8hvK6P0basQJhpL0/sgJhpB0rwD9BGGnHCoTBP88tcer33MI/XkN5DeU1xD/tWIEw0o7FP3xuiVO/58Y/C4SRdqxAyD+amZmZmZnJPyivobyG8so/t8Sp33NLzD9G2rECYaTNP9XvuSVO/c4/sgJhpB0r0D95DeU1lNfQP0EYaccKhNE/CCPtWIEw0j/PLXHq99zSP5c49XtuidM/XkN5DeU11D8mTv2eW+LUP+1YgTDSjtU/tWMFwkg71j98bolTv+fWP0N5DeU1lNc/C4SRdqxA2D/SjhUII+3YP5qZmZmZmdk/YaQdKxBG2j8or6G8hvLaP/C5JU79nts/t8Sp33NL3D9/zy1x6vfcP0basQJhpN0/DeU1lNdQ3j/V77klTv3eP5z6PbfEqd8/sgJhpB0r4D8WCCPtWIHgP3kN5TWU1+A/3RKnfs8t4T9BGGnHCoThP6QdKxBG2uE/CCPtWIEw4j9sKK+hvIbiP88tcer33OI/MzMzMzMz4z+XOPV7bonjP/s9t8Sp3+M/XkN5DeU15D/CSDtWIIzkPyZO/Z5b4uQ/iVO/55Y45T/tWIEw0o7lP1FeQ3kN5eU/tWMFwkg75j8YaccKhJHmP3xuiVO/5+Y/4HNLnPo95z9DeQ3lNZTnP6d+zy1x6uc/C4SRdqxA6D9uiVO/55boP9KOFQgj7eg/NpTXUF5D6T+amZmZmZnpP/2eW+LU7+k/YaQdKxBG6j/Fqd9zS5zqPyivobyG8uo/jLRjBcJI6z/wuSVO/Z7rP1S/55Y49es/t8Sp33NL7D8bymsor6HsP3/PLXHq9+w/4tTvuSVO7T9G2rECYaTtP6rfc0uc+u0/DeU1lNdQ7j9x6vfcEqfuP9XvuSVO/e4/OfV7bolT7z+c+j23xKnvPw==","dtype":"float64","order":"little","shape":[95]}},"selected":{"id":"1062"},"selection_policy":{"id":"1063"}},"id":"1048","type":"ColumnDataSource"},{"attributes":{},"id":"1002","type":"DataRange1d"},{"attributes":{"data_source":{"id":"1048"},"glyph":{"id":"1049"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1050"},"selection_glyph":null,"view":{"id":"1052"}},"id":"1051","type":"GlyphRenderer"},{"attributes":{"source":{"id":"1048"}},"id":"1052","type":"CDSView"},{"attributes":{"data":{"x":{"__ndarray__":"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","dtype":"float64","order":"little","shape":[211]},"y":{"__ndarray__":"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","dtype":"float64","order":"little","shape":[211]}},"selected":{"id":"1044"},"selection_policy":{"id":"1045"}},"id":"1032","type":"ColumnDataSource"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1024","type":"BoxAnnotation"},{"attributes":{"axis_label":"time to catastrophe (s)","formatter":{"id":"1042"},"ticker":{"id":"1011"}},"id":"1010","type":"LinearAxis"},{"attributes":{},"id":"1042","type":"BasicTickFormatter"},{"attributes":{},"id":"1006","type":"LinearScale"},{"attributes":{},"id":"1062","type":"Selection"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"x":{"field":"x"},"y":{"field":"y"}},"id":"1033","type":"Circle"},{"attributes":{},"id":"1011","type":"BasicTicker"},{"attributes":{"axis":{"id":"1010"},"ticker":null},"id":"1013","type":"Grid"},{"attributes":{},"id":"1023","type":"HelpTool"},{"attributes":{"axis_label":"Cumulative Distribution","formatter":{"id":"1040"},"ticker":{"id":"1015"}},"id":"1014","type":"LinearAxis"},{"attributes":{"axis":{"id":"1014"},"dimension":1,"ticker":null},"id":"1017","type":"Grid"},{"attributes":{},"id":"1063","type":"UnionRenderers"},{"attributes":{},"id":"1015","type":"BasicTicker"},{"attributes":{"overlay":{"id":"1024"}},"id":"1020","type":"BoxZoomTool"},{"attributes":{},"id":"1044","type":"Selection"},{"attributes":{"below":[{"id":"1010"}],"center":[{"id":"1013"},{"id":"1017"},{"id":"1046"}],"left":[{"id":"1014"}],"plot_height":400,"plot_width":400,"renderers":[{"id":"1035"},{"id":"1051"}],"title":{"id":"1037"},"toolbar":{"id":"1025"},"x_range":{"id":"1002"},"x_scale":{"id":"1006"},"y_range":{"id":"1004"},"y_scale":{"id":"1008"}},"id":"1001","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1018","type":"PanTool"},{"attributes":{},"id":"1004","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1018"},{"id":"1019"},{"id":"1020"},{"id":"1021"},{"id":"1022"},{"id":"1023"}]},"id":"1025","type":"Toolbar"},{"attributes":{},"id":"1019","type":"WheelZoomTool"},{"attributes":{},"id":"1045","type":"UnionRenderers"},{"attributes":{},"id":"1021","type":"SaveTool"},{"attributes":{},"id":"1022","type":"ResetTool"},{"attributes":{"text":""},"id":"1037","type":"Title"},{"attributes":{"source":{"id":"1032"}},"id":"1036","type":"CDSView"},{"attributes":{"label":{"value":"labeled"},"renderers":[{"id":"1035"}]},"id":"1047","type":"LegendItem"}],"root_ids":["1001"]},"title":"Bokeh Application","version":"2.2.1"}}
+        <script type="application/json" id="1282">
+          {"6bef5ffb-a499-4b48-85ad-19b7fdd441af":{"roots":{"references":[{"attributes":{},"id":"1013","type":"BasicTicker"},{"attributes":{"children":[{"id":"1070"},{"id":"1068"}]},"id":"1071","type":"Column"},{"attributes":{},"id":"1056","type":"CategoricalTickFormatter"},{"attributes":{"factors":["beta_2","beta_1"]},"id":"1006","type":"FactorRange"},{"attributes":{},"id":"1054","type":"BasicTickFormatter"},{"attributes":{"below":[{"id":"1012"}],"center":[{"id":"1015"},{"id":"1018"}],"frame_height":100,"frame_width":450,"left":[{"id":"1016"}],"renderers":[{"id":"1036"},{"id":"1041"},{"id":"1046"},{"id":"1051"}],"title":{"id":"1002"},"toolbar":{"id":"1026"},"toolbar_location":null,"x_range":{"id":"1004"},"x_scale":{"id":"1008"},"y_range":{"id":"1006"},"y_scale":{"id":"1010"}},"id":"1001","subtype":"Figure","type":"Plot"},{"attributes":{"text":""},"id":"1002","type":"Title"},{"attributes":{"toolbar":{"id":"1069"},"toolbar_location":"above"},"id":"1070","type":"ToolbarBox"},{"attributes":{},"id":"1020","type":"WheelZoomTool"},{"attributes":{"axis_label":"Poisson distribution of microtubule catastrophe","formatter":{"id":"1054"},"ticker":{"id":"1013"}},"id":"1012","type":"LinearAxis"},{"attributes":{"toolbars":[{"id":"1026"}],"tools":[{"id":"1019"},{"id":"1020"},{"id":"1021"},{"id":"1022"},{"id":"1023"},{"id":"1024"}]},"id":"1069","type":"ProxyToolbar"},{"attributes":{},"id":"1062","type":"Selection"},{"attributes":{},"id":"1066","type":"Selection"},{"attributes":{"axis":{"id":"1012"},"ticker":null},"id":"1015","type":"Grid"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":5},"x":{"field":"x"},"y":{"field":"y"}},"id":"1044","type":"Circle"},{"attributes":{"data_source":{"id":"1033"},"glyph":{"id":"1034"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1035"},"selection_glyph":null,"view":{"id":"1037"}},"id":"1036","type":"GlyphRenderer"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"1040","type":"Line"},{"attributes":{"source":{"id":"1043"}},"id":"1047","type":"CDSView"},{"attributes":{},"id":"1065","type":"UnionRenderers"},{"attributes":{"data_source":{"id":"1038"},"glyph":{"id":"1039"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1040"},"selection_glyph":null,"view":{"id":"1042"}},"id":"1041","type":"GlyphRenderer"},{"attributes":{"source":{"id":"1033"}},"id":"1037","type":"CDSView"},{"attributes":{"overlay":{"id":"1025"}},"id":"1021","type":"BoxZoomTool"},{"attributes":{"data_source":{"id":"1043"},"glyph":{"id":"1044"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1045"},"selection_glyph":null,"view":{"id":"1047"}},"id":"1046","type":"GlyphRenderer"},{"attributes":{"fill_color":{"value":"#1f77b4"},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":5},"x":{"field":"x"},"y":{"field":"y"}},"id":"1034","type":"Circle"},{"attributes":{},"id":"1064","type":"Selection"},{"attributes":{"children":[[{"id":"1001"},0,0]]},"id":"1068","type":"GridBox"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":5},"x":{"field":"x"},"y":{"field":"y"}},"id":"1035","type":"Circle"},{"attributes":{},"id":"1063","type":"UnionRenderers"},{"attributes":{"data":{"x":{"__ndarray__":"ox8oxSbvcD80hA0wqMmiPX2Yoqtn73A/","dtype":"float64","order":"little","shape":[3]},"y":["beta_1","beta_1"]},"selected":{"id":"1062"},"selection_policy":{"id":"1061"}},"id":"1038","type":"ColumnDataSource"},{"attributes":{"data":{"x":[0.003033453157224675],"y":["beta_2"]},"selected":{"id":"1064"},"selection_policy":{"id":"1063"}},"id":"1043","type":"ColumnDataSource"},{"attributes":{"data_source":{"id":"1048"},"glyph":{"id":"1049"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1050"},"selection_glyph":null,"view":{"id":"1052"}},"id":"1051","type":"GlyphRenderer"},{"attributes":{"line_alpha":0.1,"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"1050","type":"Line"},{"attributes":{},"id":"1023","type":"ResetTool"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"size":{"units":"screen","value":5},"x":{"field":"x"},"y":{"field":"y"}},"id":"1045","type":"Circle"},{"attributes":{"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"1049","type":"Line"},{"attributes":{"source":{"id":"1048"}},"id":"1052","type":"CDSView"},{"attributes":{"line_color":"#1f77b4","line_width":3,"x":{"field":"x"},"y":{"field":"y"}},"id":"1039","type":"Line"},{"attributes":{"data":{"x":{"__ndarray__":"M/nT4XR4dD/SmaUsFJQRPxvsSYKIeHQ/","dtype":"float64","order":"little","shape":[3]},"y":["beta_2","beta_2"]},"selected":{"id":"1066"},"selection_policy":{"id":"1065"}},"id":"1048","type":"ColumnDataSource"},{"attributes":{},"id":"1004","type":"DataRange1d"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1019"},{"id":"1020"},{"id":"1021"},{"id":"1022"},{"id":"1023"},{"id":"1024"}]},"id":"1026","type":"Toolbar"},{"attributes":{},"id":"1022","type":"SaveTool"},{"attributes":{},"id":"1010","type":"CategoricalScale"},{"attributes":{"axis_label":"beta","formatter":{"id":"1056"},"ticker":{"id":"1017"}},"id":"1016","type":"CategoricalAxis"},{"attributes":{},"id":"1024","type":"HelpTool"},{"attributes":{},"id":"1017","type":"CategoricalTicker"},{"attributes":{},"id":"1060","type":"Selection"},{"attributes":{"bottom_units":"screen","fill_alpha":0.5,"fill_color":"lightgrey","left_units":"screen","level":"overlay","line_alpha":1.0,"line_color":"black","line_dash":[4,4],"line_width":2,"right_units":"screen","top_units":"screen"},"id":"1025","type":"BoxAnnotation"},{"attributes":{},"id":"1019","type":"PanTool"},{"attributes":{},"id":"1061","type":"UnionRenderers"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{"source":{"id":"1038"}},"id":"1042","type":"CDSView"},{"attributes":{"axis":{"id":"1016"},"dimension":1,"ticker":null},"id":"1018","type":"Grid"},{"attributes":{"data":{"x":[0.003046964167955869],"y":["beta_1"]},"selected":{"id":"1060"},"selection_policy":{"id":"1059"}},"id":"1033","type":"ColumnDataSource"},{"attributes":{},"id":"1059","type":"UnionRenderers"}],"root_ids":["1071"]},"title":"Bokeh Application","version":"2.2.1"}}
         </script>
         <script type="text/javascript">
           (function() {
@@ -687,8 +517,8 @@
                 (function(root) {
                   function embed_document(root) {
 
-                  var docs_json = document.getElementById('1175').textContent;
-                  var render_items = [{"docid":"f741a7a5-5896-4bcd-a14e-64998372c98a","root_ids":["1001"],"roots":{"1001":"24cc3b0c-25f7-4fe3-b167-ea314a9abf9a"}}];
+                  var docs_json = document.getElementById('1282').textContent;
+                  var render_items = [{"docid":"6bef5ffb-a499-4b48-85ad-19b7fdd441af","root_ids":["1071"],"roots":{"1071":"16b77bf8-77e4-4d4a-8a93-c3e4931bd3c8"}}];
                   root.Bokeh.embed.embed_items(docs_json, render_items);
 
                   }
@@ -719,45 +549,4 @@
 
   </body>
 
-</html>
-
-</center>
-
-<h2 id="proposing-a-novel-distribution-to-model-time-to-catastrophe">Proposing a Novel Distribution to Model Time to Catastrophe</h2>
-<p>Although previous work by multiple authors including Gardner et al. have asserted that microtubule time to catastrophe may be approximated by a Gamma distribution, we are unsure this is truly the most appropriate model. This would imply that multiple chemical processes with similar rates must occur to trigger microtubule catastrophe. Many factors are known to be important in microtubule catastrophe dynamics/kinetics. For example, whether or not there is a GTP cap “protecting” the microtubule from depolymerization might vary. There is not enough evidence to conclude that time to catastrophe follows a Gamma distribution. We propose an alternative model where we postulate that two biochemical processes will occur in sequence, triggering catastrophe. These processes are both Poisson processes with rates beta_1 and beta_2, respectively. We use a random number generator to simulate 150 catastrophe events according to this model with various pairs of beta_1 and beta_2. We include the source code to generate these plots below (___). We note that the more beta_2 is greater than beta_1, the steeper the ECDF is. This makes sense because if the processes occurred faster, catastrophe would be triggered more quickly.</p>
-
-<h2 id="analytical-derivation-of-time-to-catastrophe-model">Analytical derivation of time to catastrophe model</h2>
-<p>We analytically derive the distribution for the time to catastrophe, finding the PDF and CDF for this distribution. We then compare this analytical CDF with ECDFs from our previous simulation to confirm that they match and we see that the CDF is correct. We include the source code to generate these plots below (___). We can then use this analytical PDF or CDF to compare this model to a Gamma distribution to see which is more appropriate to model time to catastrophe.</p>
-
-<h2 id="derivation-work">Derivation Work</h2>
-
-<p><img src="fig_html/math.jpg" alt="image" /></p>
-
-<h2 id="comparing-our-proposed-distribution-with-a-gamma-distribution">Comparing Our Proposed Distribution With a Gamma Distribution</h2>
-<p>Next, we will analytically compare the distribution we propose consisting of two consecutive cellular processes (Poisson) with a gamma distribution. We display plots of predictive ECDFs of both distributions overlaid with the ECDF of the measured data of microtubule time to catastrophe for 12uM of fluorescently labeled tubulin (made available to us via Justin Bois). We find that the ECDF of the Gamma distribution actually seems to match with the measured ECDF compared to that of our proposed distribution. Furthermore, we also plot the difference between the predictive ECDF and the measured ECDF to more clearly see how far apart the ECDF values of the predictive ECDFs are from the actual data points. We find that the difference between our proposed distribution and the measured data is indeed greater than that of the Gamma distribution. Then, we use the AIC, which can be broadly understood as an estimate of a quantity related to the distance between the true generative distribution and the model distribution. Given two models, the one with the smaller AIC value is likely closer to the true generative distribution. We then compute the AIC for both and indeed find that our proposed model consisting of 2 Poisson processes (AIC value on the order of 10^-11) is not as likely to be as close to the measured data as the Gamma Distribution.</p>
-
-<h2 id="summary">Summary</h2>
-<p>From the data provided to us by the Howard Lab, we were able to compare a novel model of microtubule catastrophe to the Gamma Distribution. Our novel model is defined as 2 sequential biochemical processes which are Poisson and trigger microtubule catastrophe. Through graphical and statistical analysis, we conclude that our proposed model is not as appropriate to model time to catastrophe of microtubules compared to the Gamma Distribution.</p>
-
-
-      <div class="page-footer">
-      </div>
-    </div> <!-- End Wrap Content -->
-  </div> <!-- End Page Content -->
-</article> <!-- End Article Page -->
-
-</div>
-
-  </div>
-  
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', '', 'auto');
-  ga('send', 'pageview');
-</script> <!-- End Analytics -->
-
-</body>
 </html>

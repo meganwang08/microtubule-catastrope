@@ -1,3 +1,4 @@
+#8.2
 import itertools
 import warnings
 import numpy as np
@@ -55,10 +56,10 @@ poisson_CI = np.percentile(bs_reps_microtubule, [2.5, 97.5], axis=0)
 print('beta_1 = [{}, {}]'.format(poisson_CI[0][0], poisson_CI[1][0]))
 print('beta_2 = [{}, {}]'.format(poisson_CI[0][2], poisson_CI[1][2]))
 
-all_data_gamma = [{'label': 'beta_1',
+all_data_gamma = [{'label': 'alpha',
   'estimate': np.mean(bs_reps[0]),
   'conf_int': np.array(gamma_conf_int[0])},
- {'label': 'beta_2',
+ {'label': 'beta',
   'estimate': np.mean(bs_reps[1]),
   'conf_int': np.array(gamma_conf_int[1])}]
 

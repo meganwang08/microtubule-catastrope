@@ -19,6 +19,17 @@ lbl_times = lbl_df["time to catastrophe (s)"]
 unlbl_df = df.loc[df['labeled'] == False]
 unlbl_times = unlbl_df["time to catastrophe (s)"]
 
+
+
+# Observed test statistic 
+ks_obs = mt.ks_stat(labeled, unlabeled)  
+#Draw permuation replicates
+ ks_reps = mt.draw_perm_reps_ks(labeled, unlabeled, size=n_reps)
+  # Compute p-value 
+p_ks = (np.abs(ks_reps) > ks_obs).sum() / n_reps  
+print("p =", p_ks)
+
+
 overlay = iqplot.ecdf(
         data=df,
         q="time to catastrophe (s)",

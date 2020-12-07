@@ -11,7 +11,7 @@ interactive: interactive_1.html
 Below is an example of an embedded interactive figure. It generates a stripbox plot
 on the left used to visualize the data across different concentrations of tubulin.
 On the right, we should that for all concentrations of tubulin, our proposed model
-does not fit well to the measured data. 
+does not fit well to the measured data.
 
 <!-- The below line includes the interactive figure. Do not change! -->
 <center>
