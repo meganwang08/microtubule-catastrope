@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>http://localhost:4000/microtubule-catastrophe/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/people</loc>
+<loc>http://localhost:4000/microtubule-catastrophe/people</loc>
 </url>
 <url>
-<loc>http://localhost:4000/analysis.html</loc>
+<loc>http://localhost:4000/microtubule-catastrophe/analysis.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/code</loc>
+<loc>http://localhost:4000/microtubule-catastrophe/code</loc>
 </url>
 <url>
-<loc>http://localhost:4000/interactive_a</loc>
+<loc>http://localhost:4000/microtubule-catastrophe/interactive_a</loc>
 </url>
 <url>
-<loc>http://localhost:4000/interactives/interactive_1.html</loc>
+<loc>http://localhost:4000/microtubule-catastrophe/interactives/interactive_1.html</loc>
 <lastmod>2020-12-07T13:18:04-05:00</lastmod>
 </url>
 </urlset>
