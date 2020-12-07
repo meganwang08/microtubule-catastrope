@@ -4,8 +4,66 @@
 # Markdowns of all the graphs and descriptions of them
 
 title: >
-  yeet
-section_1: >
-  yah
-section_2: >
-  test
+  yah e
+
+Confirming we can move forward with the provided data (2.2/6.1): >
+  We compared the labeled vs unlabeled tubulin to confirm fluorescent labeling
+  indeed doesn’t affect time to catastrophe by plotting the ECDFs (with confidence
+  intervals) of the provided data of times to catastrophe. We display the ECDFs
+  here and the fluorescent labeling does not appear to make a difference on the
+  onset of catastrophe as the ECDF plots do not deviate significantly from each
+  other. Then, we computed 95% confidence intervals for the plug-in estimate of the
+  mean time to catastrophe for labeled and unlabeled tubulin and found there is
+  very strong overlap of the confidence intervals. This indicates that the labeled
+  and unlabeled tubulin result in similar mean time to catastrophe. We also conducted
+  a permutation test to test our hypothesis that fluorescent labeling does not affect
+  microtubule catastrophe dynamics. The test statistic we chose was the Kolmogorov-Smirnov
+  (K-S) statistic; we computed the p-value of this test to see whether it was possible
+  that the distribution of catastrophe times for microtubules with labeled tubulin is
+  the same as that for unlabeled tubulin. We obtained a p-value of  p = 0.26204 >
+  alpha = 0.05. This indicates it is possible to observe this test statistic under
+  the null hypothesis that there is no difference in labeled and unlabeled catastrophe
+  times and because we saw from our graphical analysis that the two distributions look
+  very similar, we conclude that the measured data for labeled and unlabeled tubulin are very
+  similarly distributed and can be viewed as identical for analytical purposes. Moving
+  forward, we only analyze the time to catastrophe of microtubules growing with fluorescently
+  labelled tubulin. We include the source code to generate this plot below as well as the
+  mentioned analysis (___).
+
+Proposing a Novel Distribution to Model Time to Catastrophe (5.2): >
+  Although previous work by multiple authors including Gardner et al. have asserted
+  that microtubule time to catastrophe may be approximated by a Gamma distribution,
+  we are unsure this is truly the most appropriate model. This would imply that
+  multiple chemical processes with similar rates must occur to trigger microtubule
+  catastrophe. Many factors are known to be important in microtubule catastrophe
+  dynamics/kinetics. For example, whether or not there is a GTP cap “protecting”
+  the microtubule from depolymerization might vary. There is not enough evidence
+  to conclude that time to catastrophe follows a Gamma distribution. We propose
+  an alternative model where we postulate that two biochemical processes will
+  occur in sequence, triggering catastrophe. These processes are both Poisson
+  processes with rates beta_1 and beta_2, respectively. We use a random number
+  generator to simulate 150 catastrophe events according to this model with various pairs
+  of beta_1 and beta_2. We include the source code to generate these plots below (___).
+  We note that the more beta_2 is greater than beta_1, the steeper the ECDF is. This makes
+  sense because if the processes occurred faster, catastrophe would be triggered more quickly.
+
+Analytical derivation of time to catastrophe model: >
+We analytically derive the distribution for the time to catastrophe, finding the
+PDF and CDF for this distribution. We then compare this analytical CDF with ECDFs
+from our previous simulation to confirm that they match and we see that the CDF is
+correct. We include the source code to generate these plots below (___). We can then
+use this analytical PDF or CDF to compare this model to a Gamma distribution to see
+which is more appropriate to model time to catastrophe.
+
+Comparing Our Proposed Distribution With a Gamma Distribution (8.2/9.1): >
+Next, we will analytically compare the distribution we propose consisting of two
+consecutive cellular processes (Poisson) with a gamma distribution. We display
+plots of predictive ECDFs of both distributions overlaid with the ECDF of the
+measured data of microtubule time to catastrophe for 12uM of fluorescently labeled
+tubulin (made available to us via Justin Bois). We find that the ECDF of the Gamma
+distribution actually seems to match with the measured ECDF compared to that of our
+proposed distribution. Furthermore, we also plot the difference between the predictive
+ECDF and the measured ECDF to more clearly see how far apart the ECDF values of the
+predictive ECDFs are from the actual data points. We find that the difference between
+our proposed distribution and the measured data is indeed greater than that of the Gamma
+distribution.

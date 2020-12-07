@@ -18,3 +18,7 @@
   name: model_comparison_microtubule.py
   desc: >
     Comparing gamma and poisson distributions from MLE_of_microtubules.
+- script:
+  name: dashboard.py
+  desc: >
+    Interactive dashboard of our proposed model for microtubule time to catastrophe.

@@ -2,19 +2,17 @@
 layout: page
 title: Analysis
 description: Analysis of the plots
-img: microtubule_long.png # Add image post (optional)
-caption: "Peter Mindek (2019)"
+img: microtubule_analysis.jpg # Add image post (optional)
+caption: "Wikipedia"
 permalink: analysis.html
 sidebar: true
----
 
 ---
-
 
 # {{site.data.analysis.title}}
 {{site.data.analysis.authors}}
 
-{% for entry in site.data.analysis %}
+{% for entry in site.data.a %}
 
 {% if entry[0] != 'title' %}
 {% if entry[0] != 'authors' %}

@@ -2,8 +2,8 @@
 layout: page
 title: People
 description: About the authors
-img: people.png 
-caption: "Looking directly at the eclipse."
+img: caltech.png
+caption: "Caltech"
 permalink: people
 sidebar: true
 ---
@@ -14,7 +14,7 @@ sidebar: true
 <!--
 This page autogenerates a list of the authors provided in the people.yaml file
 in the _data folder. Do not touch the code below unless you have an idea of what
-you're doing, or it will break the display of the authors. 
+you're doing, or it will break the display of the authors.
 -->
 
 
@@ -38,7 +38,7 @@ you're doing, or it will break the display of the authors.
 {% assign website = " " %}
 {% endif %}
 
-<!-- Populate the author fields --> 
+<!-- Populate the author fields -->
 
  <a class="post-thumbnail" style="background-image: url({{site.baseurl}}/assets/img/people/{{pic}})" href="{{website}}"></a>
 
