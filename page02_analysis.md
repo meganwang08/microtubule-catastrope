@@ -9,10 +9,8 @@ sidebar: true
 
 ---
 
-# {{site.data.analysis.title}}
-{{site.data.analysis.authors}}
 
-{% for entry in site.data.a %}
+{% for entry in site.data.analysis %}
 
 {% if entry[0] != 'title' %}
 {% if entry[0] != 'authors' %}

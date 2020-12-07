@@ -25,40 +25,40 @@
   <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
 
     <meta content="Microtubule Catastrophe" property="og:site_name">
-
+  
     <meta content="Analysis" property="og:title">
-
-
+  
+  
     <meta content="article" property="og:type">
-
-
+  
+  
     <meta content="Analysis of the plots" property="og:description">
-
-
+  
+  
     <meta content="http://localhost:4000/analysis.html" property="og:url">
-
-
-
+  
+  
+  
     <meta content="http://localhost:4000/assets/img/microtubule_analysis.jpg" property="og:image">
-
-
-
+  
+  
+  
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
     <meta name="twitter:creator" content="@">
-
+  
     <meta name="twitter:title" content="Analysis">
-
-
+  
+  
     <meta name="twitter:url" content="http://localhost:4000/analysis.html">
-
-
+  
+  
     <meta name="twitter:description" content="Analysis of the plots">
-
-
+  
+  
     <meta name="twitter:image:src" content="http://localhost:4000/assets/img/microtubule_analysis.jpg">
-
+  
 
 	<meta name="description" content="Analysis of the plots">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -95,31 +95,31 @@
       <div class="author-name"></div>
       <div class="sidebar-links">
       <hr>
-
+      
        <p><a href="http://localhost:4000/index.html">About</a></p>
       <hr>
-
-
+      
+      
        <p><a href="http://localhost:4000/people">People</a></p>
       <hr>
-
-
+      
+      
        <p><a href="http://localhost:4000/analysis.html">Analysis</a></p>
       <hr>
-
-
+      
+      
        <p><a href="http://localhost:4000/code">Code and Data</a></p>
       <hr>
-
-
+      
+      
        <p><a href="http://localhost:4000/interactive_a">Interactive Figure 1</a></p>
       <hr>
-
-
-
-
-
-
+      
+      
+      
+      
+      
+      
       </div>
     </div>
   </header> <!-- End Header -->
@@ -128,73 +128,52 @@
     <section class="contact">
       <h3 class="contact-title">Contact</h3>
       <ul>
-
-
+        
+        
           <li class="github"><a href="http://github.com/meganwang08" target="_blank"><i class="fa fa-github"></i></a></li>
-
-
+        
+        
           <li class="email"><a href="mailto:yinghan@caltech.edu"><i class="fa fa-envelope-o"></i></a></li>
-
-      </ul>
-    </section>
+        
+      </ul> 
+    </section> 
     <div class="copyright">
-      <p>2020 &copy;
+      <p>2020 &copy; 
     </div>
     <center>
     </center>
-  </footer>
-</aside>
+  </footer> 
+</aside> 
 <div class="content-box clearfix">
   <article class="article-page">
   <div class="page-content">
-
+    
     <div class="page-cover-image">
       <figure>
         <img class="page-image" src=/assets/img/microtubule_analysis.jpg alt="Analysis">
-
+        
           <figcaption style="background-color: rgb(0, 0, 0, 0.5);
           font-weight:bold; text-align: center;">Wikipedia</figcaption>
-
+        
       </figure>
     </div> <!-- End Page Cover Image -->
-
+    
     <div class="wrap-content">
       <header class="header-page">
         <h1 class="page-title">Analysis</h1>
       </header>
-      <hr />
+      
+<h2 id="confirming-we-can-move-forward-with-the-provided-data">Confirming we can move forward with the provided data</h2>
+<p>We compared the labeled vs unlabeled tubulin to confirm fluorescent labeling indeed doesn’t affect time to catastrophe by plotting the ECDFs (with confidence intervals) of the provided data of times to catastrophe. We display the ECDFs here and the fluorescent labeling does not appear to make a difference on the onset of catastrophe as the ECDF plots do not deviate significantly from each other. Then, we computed 95% confidence intervals for the plug-in estimate of the mean time to catastrophe for labeled and unlabeled tubulin and found there is very strong overlap of the confidence intervals. This indicates that the labeled and unlabeled tubulin result in similar mean time to catastrophe. We also conducted a permutation test to test our hypothesis that fluorescent labeling does not affect microtubule catastrophe dynamics. The test statistic we chose was the Kolmogorov-Smirnov (K-S) statistic; we computed the p-value of this test to see whether it was possible that the distribution of catastrophe times for microtubules with labeled tubulin is the same as that for unlabeled tubulin. We obtained a p-value of  p = 0.26204 &gt; alpha = 0.05. This indicates it is possible to observe this test statistic under the null hypothesis that there is no difference in labeled and unlabeled catastrophe times and because we saw from our graphical analysis that the two distributions look very similar, we conclude that the measured data for labeled and unlabeled tubulin are very similarly distributed and can be viewed as identical for analytical purposes. Moving forward, we only analyze the time to catastrophe of microtubules growing with fluorescently labelled tubulin. We include the source code to generate this plot below as well as the mentioned analysis (___).</p>
 
-<h1 id="title">test</h2>
+<h2 id="proposing-a-novel-distribution-to-model-time-to-catastrophe">Proposing a Novel Distribution to Model Time to Catastrophe</h2>
+<p>Although previous work by multiple authors including Gardner et al. have asserted that microtubule time to catastrophe may be approximated by a Gamma distribution, we are unsure this is truly the most appropriate model. This would imply that multiple chemical processes with similar rates must occur to trigger microtubule catastrophe. Many factors are known to be important in microtubule catastrophe dynamics/kinetics. For example, whether or not there is a GTP cap “protecting” the microtubule from depolymerization might vary. There is not enough evidence to conclude that time to catastrophe follows a Gamma distribution. We propose an alternative model where we postulate that two biochemical processes will occur in sequence, triggering catastrophe. These processes are both Poisson processes with rates beta_1 and beta_2, respectively. We use a random number generator to simulate 150 catastrophe events according to this model with various pairs of beta_1 and beta_2. We include the source code to generate these plots below (___). We note that the more beta_2 is greater than beta_1, the steeper the ECDF is. This makes sense because if the processes occurred faster, catastrophe would be triggered more quickly.</p>
 
-<h2 id="Confirming we can move forward with the provided data (2.2/6.1)">Confirming we can move forward with the provided data (2.2/6.1)</h2>
-<p>We compared the labeled vs unlabeled tubulin to confirm fluorescent labeling
-indeed doesn’t affect time to catastrophe by plotting the ECDFs (with confidence
-intervals) of the provided data of times to catastrophe. We display the ECDFs
-here and the fluorescent labeling does not appear to make a difference on the
-onset of catastrophe as the ECDF plots do not deviate significantly from each
-other. Then, we computed 95% confidence intervals for the plug-in estimate of the
-mean time to catastrophe for labeled and unlabeled tubulin and found there is
-very strong overlap of the confidence intervals. This indicates that the labeled
-and unlabeled tubulin result in similar mean time to catastrophe. We also conducted
-a permutation test to test our hypothesis that fluorescent labeling does not affect
-microtubule catastrophe dynamics. The test statistic we chose was the Kolmogorov-Smirnov
-(K-S) statistic; we computed the p-value of this test to see whether it was possible
-that the distribution of catastrophe times for microtubules with labeled tubulin is
-the same as that for unlabeled tubulin. We obtained a p-value of  p = 0.26204 >
-alpha = 0.05. This indicates it is possible to observe this test statistic under
-the null hypothesis that there is no difference in labeled and unlabeled catastrophe
-times and because we saw from our graphical analysis that the two distributions look
-very similar, we conclude that the measured data for labeled and unlabeled tubulin are very
-similarly distributed and can be viewed as identical for analytical purposes. Moving
-forward, we only analyze the time to catastrophe of microtubules growing with fluorescently
-labelled tubulin. We include the source code to generate this plot below as well as the
-mentioned analysis (___).</p>
+<h2 id="analytical-derivation-of-time-to-catastrophe-model">Analytical derivation of time to catastrophe model</h2>
+<p>We analytically derive the distribution for the time to catastrophe, finding the PDF and CDF for this distribution. We then compare this analytical CDF with ECDFs from our previous simulation to confirm that they match and we see that the CDF is correct. We include the source code to generate these plots below (___). We can then use this analytical PDF or CDF to compare this model to a Gamma distribution to see which is more appropriate to model time to catastrophe.</p>
 
-<h2 id="Proposing a Novel Distribution to Model Time to Catastrophe (5.2)">Proposing a Novel Distribution to Model Time to Catastrophe (5.2)</h2>
-<p>yah</p>
-
-<h2 id="section_2">section_2</h2>
-<p>test</p>
+<h2 id="comparing-our-proposed-distribution-with-a-gamma-distribution">Comparing Our Proposed Distribution With a Gamma Distribution</h2>
+<p>Next, we will analytically compare the distribution we propose consisting of two consecutive cellular processes (Poisson) with a gamma distribution. We display plots of predictive ECDFs of both distributions overlaid with the ECDF of the measured data of microtubule time to catastrophe for 12uM of fluorescently labeled tubulin (made available to us via Justin Bois). We find that the ECDF of the Gamma distribution actually seems to match with the measured ECDF compared to that of our proposed distribution. Furthermore, we also plot the difference between the predictive ECDF and the measured ECDF to more clearly see how far apart the ECDF values of the predictive ECDFs are from the actual data points. We find that the difference between our proposed distribution and the measured data is indeed greater than that of the Gamma distribution.</p>
 
 
       <div class="page-footer">
@@ -206,7 +185,7 @@ mentioned analysis (___).</p>
 </div>
 
   </div>
-
+  
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
