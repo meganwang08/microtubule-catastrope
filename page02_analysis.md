@@ -24,6 +24,11 @@ sidebar: true
 {% if entry[0] contains '3' %}
 ![image](fig_html/math.jpg)
 {% endif %}
+{% if entry[0] contains '4' %}
+<center>
+{% include_relative fig_html/model_comparison.html %}
+</center>
+{% endif %}
 {% else%}
 ## {{entry[0]}}
 {{entry[1]}}

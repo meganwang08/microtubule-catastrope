@@ -78,13 +78,15 @@ Comparing Our Proposed Distribution With a Gamma Distribution: >
   quantity related to the distance between the true generative distribution and the model
   distribution. Given two models, the one with the smaller AIC value is likely closer to the
   true generative distribution. We then compute the AIC for both and indeed find that our
-  proposed model consisting of 2 Poisson processes (AIC value on the order of $10^{-11}$) is
+  proposed model consisting of two Poisson processes (AIC value on the order of $10^{-11}$) is
   not as likely to be as close to the measured data as the Gamma Distribution.
+
+fig4: >
 
 Summary: >
   From the data provided to us by the Howard Lab, we were able to compare a novel
   model of microtubule catastrophe to the Gamma Distribution. Our novel model is
-  defined as 2 sequential biochemical processes which are Poisson and trigger
+  defined as two sequential biochemical processes which are Poisson and trigger
   microtubule catastrophe. Through graphical and statistical analysis, we conclude
   that our proposed model is not as appropriate to model time to catastrophe of
   microtubules compared to the Gamma Distribution.
